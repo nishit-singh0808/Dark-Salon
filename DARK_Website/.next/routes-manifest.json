@@ -1,0 +1,231 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/editService/[id]",
+      "regex": "^/admin/editService/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/editService/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/admin/addService",
+      "regex": "^/admin/addService(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/addService(?:/)?$"
+    },
+    {
+      "page": "/admin/admin-navbar",
+      "regex": "^/admin/admin\\-navbar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/admin\\-navbar(?:/)?$"
+    },
+    {
+      "page": "/admin/applications",
+      "regex": "^/admin/applications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/applications(?:/)?$"
+    },
+    {
+      "page": "/admin/client-database",
+      "regex": "^/admin/client\\-database(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/client\\-database(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/money",
+      "regex": "^/admin/money(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/money(?:/)?$"
+    },
+    {
+      "page": "/admin/orders",
+      "regex": "^/admin/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/orders(?:/)?$"
+    },
+    {
+      "page": "/admin/query-messages",
+      "regex": "^/admin/query\\-messages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/query\\-messages(?:/)?$"
+    },
+    {
+      "page": "/admin/reviews",
+      "regex": "^/admin/reviews(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/reviews(?:/)?$"
+    },
+    {
+      "page": "/admin/serving-and-pricing",
+      "regex": "^/admin/serving\\-and\\-pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/serving\\-and\\-pricing(?:/)?$"
+    },
+    {
+      "page": "/admin/worker",
+      "regex": "^/admin/worker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/worker(?:/)?$"
+    },
+    {
+      "page": "/apply-as-professional",
+      "regex": "^/apply\\-as\\-professional(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apply\\-as\\-professional(?:/)?$"
+    },
+    {
+      "page": "/bookings",
+      "regex": "^/bookings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bookings(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/checkout",
+      "regex": "^/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/checkout(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/editProfile",
+      "regex": "^/editProfile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/editProfile(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/men-beauty",
+      "regex": "^/men\\-beauty(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/men\\-beauty(?:/)?$"
+    },
+    {
+      "page": "/men-hairstyle",
+      "regex": "^/men\\-hairstyle(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/men\\-hairstyle(?:/)?$"
+    },
+    {
+      "page": "/men-makeup",
+      "regex": "^/men\\-makeup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/men\\-makeup(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    },
+    {
+      "page": "/women-beauty",
+      "regex": "^/women\\-beauty(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/women\\-beauty(?:/)?$"
+    },
+    {
+      "page": "/women-hairstyle",
+      "regex": "^/women\\-hairstyle(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/women\\-hairstyle(?:/)?$"
+    },
+    {
+      "page": "/women-makeup",
+      "regex": "^/women\\-makeup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/women\\-makeup(?:/)?$"
+    },
+    {
+      "page": "/worker-dashboard",
+      "regex": "^/worker\\-dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/worker\\-dashboard(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

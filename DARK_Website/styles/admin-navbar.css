@@ -1,0 +1,200 @@
+.admin-navbar-container {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between logo, menu, and icons */
+  height: 85px;
+  padding: 0 20px;
+  position: fixed; /* ✅ stick to top */
+  top: 0;          /* ✅ top of the viewport */
+  left: 0;
+  width: 100%;     /* ✅ full width */
+  z-index: 1000;   /* ✅ stay above other content */
+  white-space: nowrap;
+}
+
+.admin-navbar-logo img {
+  height: 80px;
+  width: 180px;
+}
+
+/* Center menu */
+.admin-navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;  /* take center space */
+}
+
+.admin-navbar-item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.admin-navbar-item:hover { color: #ffd28f; }
+
+/* Right icons */
+.admin-navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-navbar-bell { color: #fff; }
+
+.admin-navbar-logout-button {
+  background-color: black;
+  border: 1px solid #ffd28f;
+  color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.admin-navbar-logout-button:hover {
+  background-color: #ffd28f;
+  color: black;
+  border-color: #ffd28f;
+}
+
+/* Hamburger (hidden desktop) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* 🔽 Responsive */
+@media (max-width: 1100px) {
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .admin-navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    display: none;
+  }
+
+  .admin-navbar-menu.open {
+    display: flex;
+  }
+
+  .admin-navbar-icons {
+    margin-left: auto;
+  }
+}
+
+
+
+/*--------------------------------Services & Pricing---------------------------------------------*/
+.admin-serving-pricing-container {
+  padding: 24px;
+}
+
+.admin-serving-pricing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-serving-pricing-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.admin-serving-pricing-filter {
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  margin-bottom: 20px;
+  background: #2a2a2a;
+  border: none;
+  color: #fff;
+}
+
+.admin-serving-pricing-actions {
+  /* empty, reserved for future */
+}
+
+.admin-serving-pricing-add-btn {
+  padding: 8px 16px;
+  background: #ffd28f;
+  border: 1px solid black;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.admin-serving-pricing-table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.admin-serving-pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-serving-pricing-table thead th {
+  position: sticky;
+  top: 0;
+  background: black; /* or your desired background */
+  z-index: 10;
+  color: #ffd28f;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.admin-serving-pricing-table th,
+.admin-serving-pricing-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+}
+
+.admin-serving-pricing-edit-btn {
+  background-color: #4caf50;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.admin-serving-pricing-edit-btn:hover {
+  background-color: #45a049;
+}
+
+.admin-serving-pricing-delete-btn {
+  background-color: #f44336;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.admin-serving-pricing-delete-btn:hover {
+  background-color: #da190b;
+}
+
+/*-----------------------------------------add service -------------------------------------------------*/
+
+.form-label{
+  float: left;
+}

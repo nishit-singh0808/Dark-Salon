@@ -1,0 +1,133 @@
+/*-------------------------------------      Cart Section     ------------------------------------------------*/
+.cart-section {
+  padding: 2rem 1.5rem;
+  background-color: #000; /* optional overall background */
+}
+
+/* Center empty cart message and button */
+.cart-empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px; /* Adjust as needed */
+  text-align: center;
+  gap: 1rem;
+}
+
+/* Cart Table Dark Theme with Gray Lines */
+.cart-table,
+.cart-table th,
+.cart-table td,
+.cart-table tbody tr,
+.cart-table tbody tr:hover {
+  background-color: #000 !important; /* table background black */
+  color: #fff !important; /* table content white */
+  border: 1px solid #888 !important; /* gray borders */
+}
+
+.cart-table th {
+  color: #ffd28f !important; /* headers yellow */
+  font-weight: bold;
+  border: 1px solid #888 !important; /* gray header borders */
+}
+
+.cart-total-row td {
+  color: #ffd28f !important; /* total row in gold */
+  font-weight: bold;
+  border: 1px solid #888 !important; /* gray border */
+}
+
+.cart-table tbody tr:hover {
+  background-color: #111 !important; /* optional hover effect */
+}
+
+.cart-title {
+  color: #ffd28f;
+  margin-bottom: 1rem;
+}
+
+.cart-empty {
+  color: #fff;
+}
+
+/* Gold button variant */
+.btn-gold {
+  background-color: #ffd28f !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: bold !important;
+  font-size: 1.25rem;         /* larger font size */
+  padding: 1rem 3rem;         /* increased padding for bigger button */
+  border-radius: 30px;        /* pill shape */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;           /* optional: enforce minimum width */
+   display: block;      /* Make button a block element */
+  margin: 0 auto;
+}
+.btn-gold:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .cart-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cart-title {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+
+/*-----------------------------------------booking table.  ----------------------------------------*/
+.bookings-table {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  border-collapse: collapse;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #ffd28f;
+}
+
+.bookings-table th,
+.bookings-table td {
+  border: 1px solid #ffd28f;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.bookings-table th {
+  background-color: #111;
+  color: #ffd28f;
+  font-weight: 700;
+}
+
+.bookings-table tbody tr:hover {
+  background-color: #222;
+}
+
+@media (max-width: 768px) {
+  .bookings-table {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .bookings-table th, 
+  .bookings-table td {
+    padding: 0.5rem 0.7rem;
+  }
+}
