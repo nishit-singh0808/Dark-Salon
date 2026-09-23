@@ -7,10 +7,31 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Build and deployment output
+.next/
+out/
+dist/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
 # Firebase cache
 .firebase/
 
-# Firebase config
+# Firebase credentials and private keys
+*service-account*.json
+*firebase-adminsdk*.json
+credentials*.json
+*.pem
+*.key
 
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave

@@ -4,15 +4,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; // ✅ for images
 
-// ✅ Your Firebase Config
 const firebaseConfig = {
-  apiKey: "AIzaSyAiANHUQJIv8m3y7ZtbDAgnR086VqjlEiQ",
-  authDomain: "darkglamsalon.firebaseapp.com",
-  projectId: "darkglamsalon",
-  storageBucket: "darkglamsalon.appspot.com", // ✅ fixed (remove `.storage.app`)
-  messagingSenderId: "740716103832",
-  appId: "1:740716103832:web:65ffad977de7a2105da8ed",
-  measurementId: "G-S1HXLMG7C3",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // ✅ Initialize app once
